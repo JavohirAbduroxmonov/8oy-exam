@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    #root {
+        @apply bg-primary min-h-screen
+    }
+
+    .header__shadow {
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero {
+        background-image: url('/hero.jpg');
+        background-position: center top;
+    }
+
+    .table {
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+        background: rgb(66, 66, 66);
+    }
+
+    .ranking_stats {
+        @apply font-Montserrat font-bold text-[24px] leading-[32px] text-white
+    }
+
+    .single_tab_btn {
+        @apply rounded-[5px] border border-secondary py-[11px] pl-[21px] font-Montserrat text-[16px] leading-5 bg-transparent text-white font-medium w-[285px] text-left
+    }
+
+    .single_tab_btn_active {
+        @apply bg-secondary font-bold text-[16px] left-5 text-black border border-secondary py-[11px] pl-[21px] rounded-[5px] font-Montserrat w-[285px] text-left
+    }
+}
